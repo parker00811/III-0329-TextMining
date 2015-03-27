@@ -159,7 +159,7 @@ names(which(m3[which(kmeansResult$cluster==1)[4],]!=0))
 for (i in 1:k) {
 cat(paste("cluster ", i, ": ", sep=""))
 s <- sort(kmeansResult$centers[i,], decreasing=T)
-cat(names(s)[1:3], "\n")
+cat(names(s)[1:5], "\n")
 # print the tweets of every cluster
 # print(rdmTweets[which(kmeansResult$cluster==i)])
 }
