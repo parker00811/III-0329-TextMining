@@ -18,3 +18,7 @@ sort(table(result))
 
 library(wordcloud)
 wordcloud(names(table(result)),table(result), max.words=40)
+
+
+wordcloud(names(table(result)[table(result)<300]),table(result)[table(result)<300], 
+          max.words=40,scale=c(2,0.002))
